@@ -13,13 +13,13 @@
                 <Label
                     Text="Proporciona peso en kilogramos"/>
                     <Entry
-                        BackgroundColor="WhiteSmoke"
-                        x:Name="PesoEntry"/>
+                        Text="{Binding Path=Peso}"
+                        BackgroundColor="WhiteSmoke"/>
                 <Label
                         Text=" Proporciona la estatura en metros"/>
                 <Entry
-                    BackgroundColor="WhiteSmoke"
-                    x:Name="EstaturaEntry"/>
+                    Text="{Binding Path=Estatura}"
+                    BackgroundColor="WhiteSmoke"/>
 
             </VerticalStackLayout>
         </Border>
@@ -28,11 +28,11 @@
             HorizontalOptions="Center">
             <Button
                 Text=" Calcular"
-                BackgroundColor="Green"
-                Clicked="OnCalcularButtonClicked"/>
+                Command="{Binding Path=CalcularCommand}"
+                BackgroundColor="Green"/>
             <Button
-                Text="limpiar"
-                Clicked="OnLimpiarButtonCliked"/>
+                Command="{Binding Path=LimpiarCommand}"
+                Text="limpiar"/>
         </HorizontalStackLayout>
         <Border>
             <VerticalStackLayout
@@ -41,19 +41,17 @@
                 <Label
                     Text=" Indice de masa corporal de la persona es:"/>
                 <Label
-                    Text=" 23.4567"
+                    Text="{Binding Path=Imc}"
                     HorizontalOptions="Center"
                     FontSize="Medium"
-                    FontAttributes="Bold"
-                    x:Name=" ImcLabel"/>
+                    FontAttributes="Bold"/>
                 <Label
                     Text=" El estado nutricional de la persona es:"/>
                 <Label
-                    Text=" Peso normal"
+                    Text="{Binding Path=EstadoNutricional}"
                     HorizontalOptions="Center"
                     FontSize="Medium"
-                    FontAttributes="Bold"
-                    x:Name="EstadoNutricionalLabel"/>
+                    FontAttributes="Bold"/>
             </VerticalStackLayout>
                 
         </Border>
