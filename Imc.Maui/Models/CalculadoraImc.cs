@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Imc.Maui.Models
 {
-    public static class CalculadoraImc
+    public static                    class CalculadoraImc
     {
         public static decimal IndiceDeMasaCorporal(
     decimal peso,

@@ -14,12 +14,14 @@
                     Text="Proporciona peso en kilogramos"/>
                     <Entry
                         Text="{Binding Path=Peso}"
-                        BackgroundColor="WhiteSmoke"/>
+                        BackgroundColor="WhiteSmoke"
+                        TextColor="Black"/>
                 <Label
                         Text=" Proporciona la estatura en metros"/>
                 <Entry
                     Text="{Binding Path=Estatura}"
-                    BackgroundColor="WhiteSmoke"/>
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"/>
 
             </VerticalStackLayout>
         </Border>
