@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Imc.Maui.Models
+﻿namespace Imc.Models
 {
-    public static                    class CalculadoraImc
+    public static class CalculadoraImc
     {
         public static decimal IndiceDeMasaCorporal(
     decimal peso,
